@@ -1,4 +1,4 @@
-package abrigo.modelo.usuarios;
+package abrigo.modelo.usuarios.Usuario;
 
 import abrigo.modelo.Usuario;
 

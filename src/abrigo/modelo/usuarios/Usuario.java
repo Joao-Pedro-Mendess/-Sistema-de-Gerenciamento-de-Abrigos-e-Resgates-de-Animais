@@ -1,4 +1,4 @@
-package abrigo.modelo;
+package abrigo.modelo.usuarios;
 
 public abstract class Usuario {
 
@@ -28,16 +28,10 @@ public void setNome(String nome) {
     this.nome = nome;
 }
 
-public void setCpf(String cpf) {
-    this.cpf = cpf;
-}
 
 public void setEmail(String email) {
     this.email = email;
 }
 
-public void teste() {
-    System.out.println("Usuario funcionando");
-}
 
 }
