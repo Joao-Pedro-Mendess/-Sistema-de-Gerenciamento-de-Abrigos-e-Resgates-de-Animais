@@ -2,6 +2,7 @@ package abrigo.modelo.animais;
 
 import abrigo.excecoes.AnimalCriticoException;
 import abrigo.excecoes.AnimalIndisponivelException;
+import abrigo.modelo.saude.HistoricoMedico;
 
 import java.time.LocalDate;
 
@@ -18,6 +19,7 @@ public class Animal {
     private EstadoSaude estadoSaude;
     private final LocalDate dataResgate;
     private StatusAdocao status;
+    private final HistoricoMedico historicoMedico = new HistoricoMedico();
 
     public Animal(String nome, String especie, String raca, int idade,
                   Porte porte, EstadoSaude estadoSaude, LocalDate dataResgate) {
@@ -70,6 +72,7 @@ public class Animal {
     public EstadoSaude getEstadoSaude() { return estadoSaude; }
     public LocalDate getDataResgate() { return dataResgate; }
     public StatusAdocao getStatus() { return status; }
+    public HistoricoMedico getHistoricoMedico() { return historicoMedico; }
 
     public void setNome(String nome) { this.nome = nome; }
     public void setEspecie(String especie) { this.especie = especie; }
