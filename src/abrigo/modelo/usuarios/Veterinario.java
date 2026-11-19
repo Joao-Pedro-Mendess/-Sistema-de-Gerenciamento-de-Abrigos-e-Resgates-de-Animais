@@ -1,6 +1,5 @@
-package abrigo.modelo.usuarios.Usuario;
+package abrigo.modelo.usuarios;
 
-import abrigo.modelo.Usuario;
 
 public class Veterinario extends Usuario {
 

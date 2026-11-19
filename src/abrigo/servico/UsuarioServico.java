@@ -1,4 +1,4 @@
-package abrigo.servicos;
+package abrigo.servico;
 
 import java.util.ArrayList;
 import java.util.List;

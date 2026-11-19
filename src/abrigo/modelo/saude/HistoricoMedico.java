@@ -2,7 +2,7 @@ package abrigo.modelo.saude;
 
 import abrigo.excecoes.PermissaoNegadaException;
 import abrigo.excecoes.VacinaDuplicadaException;
-import abrigo.modelo.Usuario;
+import abrigo.modelo.usuarios.Usuario;
 import abrigo.modelo.usuarios.Veterinario;
 
 import java.time.LocalDate;

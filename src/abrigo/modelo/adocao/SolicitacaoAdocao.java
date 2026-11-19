@@ -1,7 +1,7 @@
 package abrigo.modelo.adocao;
 
 import abrigo.excecoes.AnimalIndisponivelException;
-import abrigo.modelo.Usuario;
+import abrigo.modelo.usuarios.Usuario;
 import abrigo.modelo.animais.Animal;
 import abrigo.modelo.usuarios.Administrador;
 
