@@ -1,6 +1,4 @@
-package abrigo.modelo.usuarios.Usuario;
-
-import abrigo.modelo.Usuario;
+package abrigo.modelo.usuarios;
 
 public class Administrador extends Usuario {
 
