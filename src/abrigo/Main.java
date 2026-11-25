@@ -3,13 +3,25 @@ package abrigo;
 import abrigo.servico.SistemaAbrigo;
 import abrigo.util.Entrada;
 import abrigo.ui.MenuUsuario;
+import abrigo.ui.MenuAnimal;
+import abrigo.ui.MenuAdocao;
+import abrigo.ui.MenuSaude;
+import abrigo.ui.MenuAtividade;
+import abrigo.ui.MenuNotificacao;
+import abrigo.ui.MenuRelatorio;
 
 public class Main {
 
     public static void main(String[] args) {
-
         SistemaAbrigo sistema = new SistemaAbrigo();
+
         MenuUsuario menuUsuario = new MenuUsuario(sistema);
+        MenuAnimal menuAnimal = new MenuAnimal(sistema);
+        MenuAdocao menuAdocao = new MenuAdocao(sistema);
+        MenuSaude menuSaude = new MenuSaude(sistema);
+        MenuAtividade menuAtividade = new MenuAtividade(sistema);
+        MenuNotificacao menuNotificacao = new MenuNotificacao(sistema);
+        MenuRelatorio menuRelatorio = new MenuRelatorio(sistema);
 
         int opcao;
 
@@ -31,22 +43,22 @@ public class Main {
                     menuUsuario.exibir();
                     break;
                 case 2:
-                    System.out.println("Módulo de animais.");
+                    menuAnimal.exibir();
                     break;
                 case 3:
-                    System.out.println("Módulo de adoções.");
+                    menuAdocao.exibir();
                     break;
                 case 4:
-                    System.out.println("Módulo de saúde.");
+                    menuSaude.exibir();
                     break;
                 case 5:
-                    System.out.println("Módulo de atividades.");
+                    menuAtividade.exibir();
                     break;
                 case 6:
-                    System.out.println("Módulo de notificações.");
+                    menuNotificacao.exibir();
                     break;
                 case 7:
-                    System.out.println("Módulo de relatórios.");
+                    menuRelatorio.exibir();
                     break;
                 case 0:
                     System.out.println("Encerrando o sistema...");
